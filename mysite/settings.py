@@ -25,7 +25,7 @@ SECRET_KEY = 'dzsw31)4z$ujl=crzew#vyjs34b2e_4+5k2++*qa($dw=w0=j-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'justpicit.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'bili.pythonanywhere.com']
 
 
 # Application definition

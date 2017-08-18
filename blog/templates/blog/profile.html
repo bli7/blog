@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+
+<html>
+<head>
+
+<title>Profile Page</title>
+<!--jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+
+<!-- font awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!--google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+<script type="text/javascript" src="{% static 'js/profile_script.js' %}"></script>
+
+<!-- <script type="text/javascript" src="profile_script.js"></script> -->
+</head>
+
+<body bgcolor="#FFEC8B">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Hello User! Welcome to Just PicIt!</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="tutorials4.html">Tutorial</a></li>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href= "category.html">New Conversation</a></li>
+      </ul>
+      <ul id = "nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="login.html">Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- the profile image section -->
+    <div class="mySlides" style = "height:350px;">
+      <img src="http://wallpapercave.com/wp/btKPV1G.jpg" width="100%" height="100%" alt="Computer Hope">
+      <img src = "http://omitted.net/images/cat-helmet.jpg" style = "position: absolute; height: 150px; width: 150px;
+      top: 140px; left: 610px; border-radius: 50%; border: 6px solid #66847C;" >
+    </div>
+
+
+<!-- the prompt my favorites -->
+<br>
+<h1 style = "margin-left: 50px; font-family:'Indie Flower',cursive;"> <i class="fa fa-star" aria-hidden="true"></i>Your Favorites<i class="fa fa-star" aria-hidden="true"></i></h1>
+
+
+<!-- my favorites pop up -->
+<ul class="collapsible popout" data-collapsible="accordion">
+   <li>
+      <div class="collapsible-header"><i class="material-icons">Sports</i></div>
+      <div class="collapsible-body">
+        <img src = "http://bit.ly/2hVMJKW" style = "height: 250px; width: 350px;">
+        <img src = "http://bit.ly/2wTl9AM" style = "height: 100px; width: 200px; ">
+        <img src = "http://bit.ly/2vx4iUP">
+      </div>
+   </li>
+   <li>
+      <div class="collapsible-header"><i class="material-icons">Music</i></div>
+      <div class="collapsible-body">
+        <img src = "http://bit.ly/2vPMHKD" style = "height: 250px; width: 350px;">
+        <img src = "http://bit.ly/2wTl9AM" style = "height: 100px; width: 200px; ">
+        <img src = "http://bit.ly/2wTov6O" style = "height: 250px; width: 350px;">
+      </div>
+   </li>
+   <li>
+      <div class="collapsible-header"><i class="material-icons">Animals</i></div>
+      <div class="collapsible-body">
+        <img src = "http://bit.ly/2vtq2CQ" style = "height: 250px; width: 350px;">
+        <img src = "http://bit.ly/2wTl9AM" style = "height: 100px; width: 200px; ">
+        <img src = "http://bit.ly/2vwP2Yh">
+      </div>
+   </li>
+   <li>
+     <div class = "collapsible-header"><i class = "material-icons">Electronic</i></div>
+     <div class = "collapsible-body">
+       <img src = "http://bit.ly/2vtsrNX" style = "height: 250px; width: 350px;">
+       <img src = "http://bit.ly/2wTl9AM" style = "height: 100px; width: 200px; ">
+       <img src = "http://bit.ly/2vZUztx" style = "height: 350px; width: 250px;">
+     </div>
+   </li>
+</ul>
+
+<br>
+
+<!-- button to start a conversation -->
+<center>
+  <a href = "category.html">
+  <button class="waves-effect waves-light btn">
+    <i class = "fa fa-plus" aria-hidden = "true"></i>
+      Start New Conversation
+  </button>
+</a>
+</center>
+
+
+
+<br><br>
+</body>
+</html>

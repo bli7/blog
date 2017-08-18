@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+
+<html>
+<head>
+{% load static %}
+
+<title>Home Page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+<!-- font awesome -->
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="(% static 'css/home_style.css' %}">
+<script type="text/javascript" src="{% static 'js/home_script.js' %}"></script>
+</head>
+
+<body>
+  <!--centered navbar -->
+  <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Just PicIt!</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="tutorials4.html">Tutorial</a></li>
+          <li><a href="profile.html">My Profile</a></li>
+        </ul>
+        <ul id = "nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="parallax-container">
+      <div class="parallax">
+        <img src="{% static "image/balloon.jpg" %}" alt="My image"/>
+</div>
+    </div>
+  <div class="section white">
+   <div class="row container">
+     <h2 class="header" style = "color:#e75480;">About Us</h2>
+
+     <!-- please disregard the dummy text, but we need a 100 words describing our goal -->
+     <p class="grey-text text-darken-4 lighten-3">
+       Feugiat nulla ante auctor. Consectetuer luctus, dignissim egestas posuere Sociosqu neque fames semper leo leo placerat mattis nonummy porta.
+       Ligula vitae lectus commodo porttitor posuere mauris litora ridiculus maecenas quisque enim, laoreet.
+       Luctus. Bibendum. Congue, vivamus commodo. Amet rutrum eu mi id laoreet mattis hendrerit dictumst nonummy congue pharetra cras imperdiet facilisi semper consectetuer mus morbi sagittis fusce erat porttitor, proin. Libero bibendum diam mattis suspendisse.
+    </p>
+
+    <!-- should be 100 words in 2 paragraphs -->
+     <p class="grey-text text-darken-4 lighten-3">
+          Lacus bibendum nulla iaculis. Mauris. Pretium per tristique velit volutpat
+          molestie erat dui condimentum laoreet sagittis sodales. Cursus sed maecenas accumsan
+          ante nostra facilisis aliquet enim. Urna convallis ac cras molestie nisi, luctus laoreet.
+      </p>
+
+      <br>
+      <!-- actually the link doesn't work, only the instagram one works-->
+      <a href = "https://twitter.com/?lang=en">
+        <button class="waves-effect waves-light btn"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></button>
+      </a>
+      <a href = "https://www.facebook.com/login.php">
+      <button class="waves-effect waves-light btn"><i class="fa fa-facebook-official" aria-hidden="true">acebook</i></button>
+    </a>
+
+    <a href = "https://www.instagram.com/accounts/login/"
+      <button class="waves-effect waves-light btn"><i class="fa fa-instagram" aria-hidden="true">  Instagram</i></button>
+    </a>
+   </div>
+ </div>
+ <div class="parallax-container">
+   <div class="parallax"><img src="http://bit.ly/2wCRaOq"></div>
+ </div>
+
+</body>
+ </html>

@@ -18,9 +18,6 @@ var data = {
 
 // it will be call whenever the button is clicked --> onClick
 
-
-$( document ).ready(function() {
-
 function check3(param) {
     var word = data[param]; // change here
     if (word != "") {
@@ -30,12 +27,6 @@ function check3(param) {
           alert('Oops.!!');
         }
 };
-
-$("#one_one").click(function() {
-  console.log("clicked!");
-  check3("one_one");
-});
-
 
 function check4(param) {
   var word = data[param];
@@ -47,11 +38,6 @@ function check4(param) {
     }
   };
 
-  $("#one_two").click(function() {
-    console.log("clicked!");
-    check4("one_two");
-  });
-
 
   function check5(param) {
     var word = data[param];
@@ -62,6 +48,23 @@ function check4(param) {
          alert("Oops!!");
       }
     };
+
+
+$( document ).ready(function() {
+
+
+$("#one_one").click(function() {
+  console.log("clicked!");
+  check3("one_one");
+});
+
+
+  $("#one_two").click(function() {
+    console.log("clicked!");
+    check4("one_two");
+  });
+
+
 
     $("#one_three").click(function() {
       console.log("clicked!");

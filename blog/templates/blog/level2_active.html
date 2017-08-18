@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
+{% load staticfiles %}
+
 <html>
+{% load static %}
 <head>
-<title>Level Page</title>
+<title>Level 2 Activities</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Compiled and minified CSS -->
@@ -16,18 +19,21 @@
 <!-- google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Handlee|Indie+Flower" rel="stylesheet">
 
-<script type="text/javascript" src="out_script.js"></script>
+<script type="text/javascript" src="{% static 'js/level2_script.js' %}"></script>
+
 </head>
 
 
 <body bgcolor = "#FFEC8B">
+  <!-- navigation bar -->
   <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">Just PicIt</a>
+        <a href="#" class="brand-logo center">Just PicIt!</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="tutorials4.html">Tutorial</a></li>
           <li><a href="profile.html">My Profile</a></li>
           <li><a href = "category.html">Category </a></li>
+          <li><a href = "level.html">Level </a></li>
         </ul>
         <ul id = "nav-mobile" class="right hide-on-med-and-down">
           <li><a href="login.html">Log Out</a></li>
@@ -35,40 +41,41 @@
       </div>
     </nav>
 
+<!--prompt -->
 <br>
-  <h3 style = "margin-left: 80px; font-family: 'Handlee', cursive;"> Please choose a level: </h3>
+  <h3 style = "margin-left: 80px; font-family: 'Handlee', cursive;"> I want to play: </h3>
 <br>
 
 
-<!-- level 1 -->
+
+<!-- basketball -->
 <center>
-<a href = "level1_active.html"><button type="button" id = "sports"style = "background-color: #32CD32; color:white;
+<a href = "output.html"><button type="button" id = "two_one" onClick = "check()" style = "background-color: #32CD32; color:white;
 padding: 15px 32px; text-align: center; text-decoration: none; border-radius: 12px;
 display: inline-block; height: 150px; width: 450px;">
-   <img src = "http://bit.ly/2vPnWy6" style = "height: 125px; width: 150px;">
+   <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball.png/170px-Basketball.png" style = "height: 120px; width: 150px;">
 </button>
 </a>
 </center>
 
-<!--level 2 -->
+<!-- soccer -->
 <br><br>
 <center>
-<a href = "level2_active.html"><button type="button" id = "sports"style = "background-color: #32CD32; color:white;
-padding: 15px 32px; text-align: center; text-decoration: none; border-radius: 12px;
-display: inline-block; height: 150px; width: 450px;">
-   <img src = "http://bit.ly/2uByr48" style = "height: 125px; width: 150px;">
+<a href = "output.html"><button type="button" id = "two_two" onClick = "check1()" style = "background-color: #32CD32; color:white; padding: 15px 32px; text-align: center;
+  text-decoration: none; border-radius: 12px; display: inline-block; height: 150px; width: 450px;">
+   <img src = "http://www.lijsoccer.com/images/soccerBall.png" style = "height: 120px; width: 150px;">
 </button>
 </a>
 </center>
 
 
-<!-- Level 3 -->
+<!-- Football -->
 <br><br>
 <center>
-<a href = "level3_active.html"><button type="button" id = "sports"style = "background-color: #32CD32; color:white;
+<a href = "output.html"><button type="button" id = "two_three" onClick = "check2()" style = "background-color: #32CD32; color:white;
 padding: 15px 32px; text-align: center; text-decoration: none; border-radius: 12px;
 display: inline-block; height: 150px; width: 450px;">
-   <img src = "http://bit.ly/2w03drZ" style = "height: 125px; width: 150px;">
+   <img src = "https://kwso.org/wp-content/uploads/2017/07/football.png" style = "height: 120px; width: 150px;">
 </button>
 </a>
 </center>

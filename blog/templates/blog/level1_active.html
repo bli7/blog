@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
+{% load staticfiles %}
+
 <html>
+{% load static %}
+
 <head>
 <title>Level 1 Activities</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,7 +20,9 @@
 <!-- google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Handlee|Indie+Flower" rel="stylesheet">
 
-<script type="text/javascript" src="level1_script.js"></script>
+
+<script type="text/javascript" src="{% static 'js/level1_script.js' %}"></script>
+
 </head>
 
 
@@ -47,7 +53,7 @@
 
 <!-- walking -->
 <center>
-<a href = "output.html"><button type="button" id = "one_one" onClick= "check3()"style = "background-color: #32CD32; color:white;
+<a href = "output.html"><button type="button" id = "one_one" onclick= "check3()"style = "background-color: #32CD32; color:white;
 padding: 15px 32px; text-align: center; text-decoration: none; border-radius: 12px;
 display: inline-block; height: 150px; width: 450px;">
    <img src = "http://images.clipartpanda.com/walking-clipart-qcBAyKpXi.svg" style = "height: 120px; width: 150px;">
@@ -58,7 +64,7 @@ display: inline-block; height: 150px; width: 450px;">
 <!--shopping -->
 <br><br>
 <center>
-<a href = "output.html"><button type="button" id = "one_two" onClick = "check4()" style = "background-color: #32CD32; color:white;
+<a href = "output.html"><button type="button" id = "one_two" onclick = "check4()" style = "background-color: #32CD32; color:white;
 padding: 15px 32px; text-align: center; text-decoration: none; border-radius: 12px;
 display: inline-block; height: 150px; width: 450px;">
    <img src = "http://images.clipartpanda.com/shopping-bag-clipart-di6659yi9.png" style = "height: 120px; width: 150px;">
@@ -70,7 +76,7 @@ display: inline-block; height: 150px; width: 450px;">
 <!-- wii -->
 <br><br>
 <center>
-<a href = "output.html"><button type="button" id = "one_three" onClick = "check5()" style = "background-color: #32CD32; color:white;
+<a href = "output.html"><button type="button" id = "one_three" onclick = "check5()" style = "background-color: #32CD32; color:white;
 padding: 15px 32px; text-align: center; text-decoration: none; border-radius: 12px;
 display: inline-block; height: 150px; width: 450px;">
    <img src = "http://worldartsme.com/images/wii-clipart-1.jpg" style = "height: 120px; width: 150px;">

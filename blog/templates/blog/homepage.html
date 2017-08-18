@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
+{% load staticfiles %}
+
 <html>
 <head>
+{% load static %}
+
 <title>Home Page</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -13,8 +17,9 @@
 <!-- font awesome -->
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="home_style.css">
-<script type="text/javascript" src="home_script.js"></script>
+
+<link rel="stylesheet" href="(% static 'css/home_style.css' %}">
+<script type="text/javascript" src="{% static 'js/home_script.js' %}"></script>
 </head>
 
 <body>
@@ -33,7 +38,9 @@
     </nav>
 
   <div class="parallax-container">
-      <div class="parallax"><img src="http://bit.ly/2fyrYnU"></div>
+      <div class="parallax">
+        <img src="{% static "image/balloon.jpg" %}" alt="My image"/>
+</div>
     </div>
   <div class="section white">
    <div class="row container">

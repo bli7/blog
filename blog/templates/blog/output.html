@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
+{% load staticfiles %}
+
 <html>
 <head>
+{% load static %}
+
 <title>Output Page</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -18,10 +22,13 @@
 
 <meta charset="utf-8"/>
 
+<link rel="stylesheet" href="(% static 'css/out_style.css' %}">
+<script type="text/javascript" src="{% static 'js/out_script.js' %}"></script>
 
-<link rel="stylesheet" type="text/css" href="out_style.css">
 
-<script type="text/javascript" src="out_script.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="out_style.css">
+
+<script type="text/javascript" src="out_script.js"></script> -->
 </head>
 
 

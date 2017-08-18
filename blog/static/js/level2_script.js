@@ -21,52 +21,52 @@ var data = {
 
 $( document ).ready(function() {
 
-function check(param) {
-    var word = data[param]; // change here
-    if (word != "") {
-      alert(word);
-        window.location.href = "output.html?word=" + word;
-    } else {
-          alert('Oops.!!');
-        }
-};
-
-$("#two_one").click(function() {
-  console.log("clicked!");
-  check("two_one");
-});
-
-
-function check1(param) {
-  var word = data[param];
-  if (word != ""){
-    alert(word);
-      window.location.href = "output.html?word=" + word;
-    } else {
-       alert("Oops!!");
-    }
-  };
-
-  $("#two_two").click(function() {
-    console.log("clicked!");
-    check1("two_two");
-  });
-
-
-  function check2(param) {
-    var word = data[param];
-    if (word != ""){
-      alert(word);
-        window.location.href = "output.html?word=" + word;
-      } else {
-         alert("Oops!!");
-      }
-    };
-
-    $("#two_three").click(function() {
-      console.log("clicked!");
-      check2("two_three");
-    });
+// function check(param) {
+//     var word = data[param]; // change here
+//     if (word != "") {
+//       alert(word);
+//         window.location.href = "output.html?word=" + word;
+//     } else {
+//           alert('Oops.!!');
+//         }
+// };
+//
+// $("#two_one").click(function() {
+//   console.log("clicked!");
+//   check("two_one");
+// });
+//
+//
+// function check1(param) {
+//   var word = data[param];
+//   if (word != ""){
+//     alert(word);
+//       window.location.href = "output.html?word=" + word;
+//     } else {
+//        alert("Oops!!");
+//     }
+//   };
+//
+//   $("#two_two").click(function() {
+//     console.log("clicked!");
+//     check1("two_two");
+//   });
+//
+//
+//   function check2(param) {
+//     var word = data[param];
+//     if (word != ""){
+//       alert(word);
+//         window.location.href = "output.html?word=" + word;
+//       } else {
+//          alert("Oops!!");
+//       }
+//     };
+//
+//     $("#two_three").click(function() {
+//       console.log("clicked!");
+//       check2("two_three");
+//     });
 
 
 });

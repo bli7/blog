@@ -1,6 +1,4 @@
 body {
-
-      background-repeat: no-repeat;
       height:100%;
       margin:0%;
       background-size: cover;
@@ -28,10 +26,10 @@ body {
 
 
 .main {
-    height: 100vh;
+
     background-color: blanchedalmond;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 
 }
 
@@ -39,4 +37,49 @@ body {
    font-size: 20px;
    color: black;
    text-align: center;
+   font-style: arial;
+}
+
+.subhead {
+  font-size: 20px;
+  color: black;
+
+  text-align: center;
+  font-style: arial;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+
+.specialhead {
+  font-size: 20px;
+  color: black;
+
+  font-style: Georgia;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+.advice {
+  font-size: 20px;
+  color: black;
+
+  font-style: arial;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.example {
+  font-size: 20px;
+  color: black;
+
+  font-style: arial;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+
 }

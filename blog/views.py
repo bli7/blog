@@ -32,11 +32,8 @@ def output (request):
 def profile (request):
     return render(request,'blog/profile.html', {})
 
-def tutorials2(request):
-    return render(request, 'blog/tutorials2.html')
-
-def tutorials3 (request):
-    return render(request,'blog/tutorials3.html', {})
-
 def tutorials4 (request):
     return render(request,'blog/tutorials4.html', {})
+
+def easytutorial(request):
+    return render(request, 'blog/easytutorial.html', {})

@@ -1,5 +1,5 @@
 body {
-      background-image: url("http://spielconsulting.com/wp-content/uploads/2011/04/icon1.gif");
+
       background-repeat: no-repeat;
       height:100%;
       margin:0%;
@@ -17,6 +17,7 @@ body {
 
 .brand-logo {
       font-size:60px;
+      margin-left: 5%;
 }
 
 
@@ -25,10 +26,17 @@ body {
 }
 
 
-p {
-      font-size: 40px;
-      color: white;
-      text-align: center;
-      margin-top: 10%;
-      margin-right: 40%
+
+.main {
+    height: 100vh;
+    background-color: blanchedalmond;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.intro {
+   font-size: 20px;
+   color: black;
+   text-align: center;
 }

@@ -15,6 +15,8 @@ urlpatterns = [
     url(r'tutorials4.html', views.tutorials4, name='tutorials4'),
     url(r'category.html', views.category, name='category'),
     url(r'easytutorial.html', views.easytutorial, name='easytutorial'),
+    url(r'hardtutorial.html', views.hardtutorial, name='hardtutorial'),
+    url(r'mediumtutorial.html', views.mediumtutorial, name='mediumtutorial'),
 
 
 ]

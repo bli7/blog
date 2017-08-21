@@ -1,0 +1,89 @@
+body {
+
+      height:100%;
+      margin:0%;
+      background-size: cover;
+
+}
+
+.dropdown-button {
+      font-size: 20px;
+
+
+
+}
+
+
+.brand-logo {
+      font-size:60px;
+      margin-left: 5%;
+}
+
+
+.hide-on-med-and-down {
+      font-size:30px;
+}
+
+
+
+.main {
+    height: 2600px;
+    background-color: blanchedalmond;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+}
+
+.intro {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-style: arial;
+}
+
+.subhead {
+  font-size: 20px;
+  color: black;
+
+  text-align: center;
+  font-style: arial;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+
+.specialhead {
+  font-size: 20px;
+  color: black;
+
+  font-style: arial;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+.advice {
+  font-size: 20px;
+  color: black;
+
+  font-style: arial;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-weight: normal;
+}
+
+.example {
+  font-size: 20px;
+  color: black;
+
+  font-style: arial;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-weight: normal;
+
+}

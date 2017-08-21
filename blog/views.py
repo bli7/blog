@@ -37,3 +37,9 @@ def tutorials4 (request):
 
 def easytutorial(request):
     return render(request, 'blog/easytutorial.html', {})
+
+def hardtutorial(request):
+    return render(request, 'blog/hardtutorial.html', {})
+
+def mediumtutorial(request):
+    return render(request, 'blog/mediumtutorial.html', {})

@@ -1,44 +1,51 @@
 <!DOCTYPE HTML>
-{% load staticfiles %}
-
 <html>
-<head>
-  {% load static %}
-<title>Login Page</title>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase Web Quickstart</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Hello User! Welcome to Just PicIt!</a>
+      </div>
+    </nav>
 
 
-<link rel="stylesheet" href="(% static 'css/theme.css' %}">
-<script type="text/javascript" src="{% static 'js/toggle.js' %}"></script>
-
-
-
-
-</head>
-
-
-<body>
-  <div class="login-page">
-  <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <button>login</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
-    </form>
+    <div class = "image">
+      <center>
+        <img src = "http://bit.ly/2vSsVwZ" style = "height: 500px">
+        <img src = "http://bit.ly/2uYZkU6" style = "height: 500px">
+      </center>
   </div>
-</div>
-</body>
 
+  <br><br>
+    <div class="container">
+      <input id ="txtEmail" type="email" placeholder="Email">
+      <input id ="txtPassword" type="password" placeholder="Password">
+      <a href = "profile.html">
+      <button id ="btnLogin" class="btn btn-action">
+        Log In
+      </button>
+    </a>
+      <button id ="btnSignUp" class="btn btn-secondary">
+        Sign Up
+      </button>
+      <button id="btnLogout" class=" btn btn-action hide">
+        Log Out
+      </button>
+    </div>
+    <script src="login.js"></script>
+    <br><br>
+  </body>
 </html>

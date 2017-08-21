@@ -46,6 +46,19 @@ function GetURLParameter(sParam)
 
     console.log("i did it");
 
+    $("#listen").click(function() {
+       console.log("listen clicked");
+       var msg = new SpeechSynthesisUtterance('I want to play');
+       window.speechSynthesis.speak(msg);
+
+
+       var act = $( "#replace" ).html();
+       console.log(act);
+       var msg1 = new SpeechSynthesisUtterance(act);
+       window.speechSynthesis.speak(msg1);
+
+     });
+
 
 
 
